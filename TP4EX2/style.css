@@ -1,0 +1,16 @@
+body {
+    background-image: url("fond.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+a {
+  width: 128px;
+  height: 128px;
+  display: block;
+
+}
+
+

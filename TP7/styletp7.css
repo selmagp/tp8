@@ -1,0 +1,144 @@
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip .tooltiptext img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F48FB1;
+    padding: 20px 30px;
+    position: relative;
+}
+
+header .logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+header .title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    font-size: 40px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        padding: 10px 15px;
+    }
+
+    header .logo img {
+        max-width: 80px; 
+    }
+
+    header h1 {
+        font-size: 20px; 
+    }
+
+    header .title {
+        position: absolute; 
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+nav {
+    background-color: #EC407A;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 19px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #FCE4EC;
+    margin: 0;
+    color: black;
+    font-size: 19px;
+}
+
+aside {
+    background-color: #F06292;
+    padding: 10px;
+    margin: 0;
+    color: white;
+}
+
+footer {
+    background-color: #C2185B;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    aside {
+        margin-top: auto;
+    }
+}
+

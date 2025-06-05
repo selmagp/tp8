@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte de Vœux 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: red;
+            margin-top: 20px;
+        }
+        .card {
+            position: relative;
+            width: 800px;
+            height: 600px;
+            margin: 20px auto;
+            background: url('fond_noel.jpg') no-repeat center center;
+            background-size: cover;
+            border: 8px solid red;
+        }
+        .card img {
+            position: absolute;
+        }
+        .card .chapeau {
+            width: 150px;
+            top: 150px;
+            left: 350px;
+        }
+        .card .flocons {
+            width: 150px;
+            top: 15px;
+            left: 15px;
+        }
+        .card .tigre {
+            position: absolute;
+            top: 200px;
+            left: 250px;
+            width: 300px;
+        }
+        .bulle {
+            position: absolute;
+            top: 100px;
+            left: 320px;
+            width: 220px;
+            padding: 15px;
+            background: white;
+            border-radius: 15px;
+            font-size: 20px;
+            text-align: center;
+            color: black;
+        }
+        .bulle::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-top-color: white;
+        }
+        .text {
+            position: absolute;
+            bottom: 30px;
+            width: 100%;
+            text-align: center;
+            color: black;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bonne année 2025 !</h1>
+    <div class="card">
+        <img src="chapeau_noel.png" alt="Chapeau de Noël" class="chapeau">
+        <img src="flocons.png" alt="Flocons de neige" class="flocons">
+        <object type="image/svg+xml" data="tete_tigre.svg" class="tigre"></object>
+        <div class="bulle">Bonne année 2025 !</div>
+        <div class="text">Bonne année et meilleurs vœux pour l'année à venir !</div>
+    </div>
+</body>
+</html>
+
+

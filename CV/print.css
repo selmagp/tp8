@@ -1,0 +1,85 @@
+@media print {
+    body {
+        background: #fff;
+        color: #000;
+        padding: 0;
+        margin: 0;
+        font-family: Verdana, sans-serif;
+        font-size: 8pt;
+    }
+
+    #navigation, #contenu {
+        width: 48%;
+        height: auto;
+        margin: 0;
+        padding: 2mm;
+        border: none;
+        background: none;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #photo img {
+        width: 33mm;
+        height: 40mm;
+        border-radius: 50%;
+    }
+
+    h1 {
+        font-size: 18pt;
+        text-align: left;
+        margin-bottom: 4mm;
+    }
+
+    h2 {
+        font-size: 12pt;
+        text-align: left;
+        margin-bottom: 4mm;
+    }
+
+    #contenu p {
+        font-size: 8pt;
+        margin-bottom: 4mm;
+        line-height: 1.2;
+    }
+
+    #contenu p em {
+        font-style: italic;
+        color: #000;
+        float: none;
+    }
+
+    .pdf-link-container {
+        text-align: left;
+        margin-top: 4mm;
+    }
+
+    .no-print {
+        display: none;
+    }
+
+    .borderless {
+        border: none;
+    }
+
+    @page {
+        margin: 10mm;
+        size: A4 portrait;
+    }
+
+    #navigation, #contenu {
+        width: 48%;
+        margin-right: 2%;
+    }
+
+    #navigation, #contenu {
+        float: none;
+        display: inline-block;
+        width: 48%;
+    }
+
+    .no-print {
+        display: none;
+    }
+}
+

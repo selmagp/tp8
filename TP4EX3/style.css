@@ -1,0 +1,144 @@
+body {
+    background-image: url("fond.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right 20% top 10%;
+    background-size: 180%;
+    animation: changerFond 0s ease-in-out 55s forwards;
+}
+
+
+@keyframes changerFond {
+    100% {
+        background-color: black; 
+        background-image: none;
+    }
+}
+
+
+#bulle {
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    top : 42%;
+    left: 62%;
+    opacity: 0; 
+    animation: apparaitre 0.5s ease-in-out 27s forwards, finBulle 0s ease 55s forwards; 
+}
+
+@keyframes apparaitre {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes finBulle {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#tototte img{
+    position: absolute;
+    width: 55px; 
+    height: auto;
+    top: 62%;
+    left: 1%;
+    opacity: 0;
+    animation: apparaitre1 0.2s ease-in-out 1.2s forwards, finTototte 0s ease 55s forwards; 
+    }
+    
+   
+@keyframes apparaitre1 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes finTototte {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#bebe {
+    position: absolute;
+    top: 60%;
+    left:0%;
+    animation: moveBebe 55s steps(55) infinite, finBebe 0s ease 55s forwards;
+    z-index: 3;
+ }
+ 
+@keyframes moveBebe {
+  0% {left: 0%;}
+  50% {left:100%;}
+  100% {left:0%;}
+  }
+  
+  
+@keyframes finBebe {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+#bebeschtroumpf img {
+    transform: scaleX(-1);
+    position: absolute;
+    width: 140px;
+    height: auto;
+    top: 45%;
+    left: 55%;
+    animation: finBebeschtroumpf 0s ease 55s forwards;
+}
+
+@keyframes finBebeschtroumpf {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+#bebetototte img{
+    position: absolute;
+    width: 200px; 
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: apparaitre2 0s ease-in-out 55s forwards;
+    }
+    
+@keyframes apparaitre2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+

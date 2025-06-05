@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <title>Titre de la page</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        video::cue {
+            font-size: 60px;
+            color: white;   
+        }
+    </style>
+</head>
+<body>
+    <video src="video.mp4" controls>
+        <track src="sous-titres.vtt" kind="subtitles" srclang="fr" label="Français" default />
+        <track src="anglais.vtt" kind="subtitles" srclang="en" label="Anglais" default />
+    </video>
+
+</body>
+</html>
+
