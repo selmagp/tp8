@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" width="300" height="100">
+  <!-- Rectangle de fond -->
+  <rect x="10" y="10" width="280" height="80" fill="#F06292" rx="15" ry="15" />
+
+  <!-- Texte avec différentes polices pour chaque lettre, centré -->
+  <text x="40" y="70" font-family="Arial" font-size="48" fill="white" font-weight="bold">S</text>
+  <text x="85" y="70" font-family="Courier New" font-size="48" fill="white" font-weight="bold">E</text>
+  <text x="130" y="70" font-family="Verdana" font-size="48" fill="white" font-weight="bold">L</text>
+  <text x="175" y="70" font-family="Georgia" font-size="48" fill="white" font-weight="bold">M</text>
+  <text x="220" y="70" font-family="Tahoma" font-size="48" fill="white" font-weight="bold">A</text>
+</svg>
